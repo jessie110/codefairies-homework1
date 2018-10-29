@@ -51,7 +51,7 @@ func getSongs(animals []string) []string {
 
 func catchAnimal(animal string) string {
 	var returnValues string
-	if animalsMap[animal] != 0 && animalsMap[animal] != 7 {
+	if animalsMap[animal] != 0 && animalsMap[animal] != 6 {
 		for i := animalsMap[animal]; i > 0; i-- {
 			returnValue := fmt.Sprintf("She swallowed the %s to catch the %s,\n", animalsMap2[i], animalsMap2[i-1])
 			returnValues += returnValue
